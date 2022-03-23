@@ -1,0 +1,9 @@
+## Interface: 50100
+## Author: Siory
+## Title: DreadSprayVR
+## Notes: VR HUD for Dread Spray sequences in the Sha of Fear encounter
+## Version: 1.2
+## DefaultState: Enabled
+## SavedVariables: DreadSprayVRDB
+
+DreadSprayVR.lua
