@@ -206,20 +206,6 @@ local function RotateField(self, elapsed)
 	local facing = GetPlayerFacing()
 	DreadSprayVR.player:SetPoint("CENTER", 0, offset + 10)
 	DreadSprayVR.player:SetRotation(facing + m_3pi2 + dtheta)
-	
-	-- dead on platform
-	if not UnitExists("boss1") then
-		if onplatform then
-			DreadSprayVR:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
-			DreadSprayVR:UnregisterEvent("UNIT_AURA")
-			sha = false
-			ported = false
-			onplatform = false
-			playing = false
-			Shot = 1
-			DreadSprayVR:Hide()
-		end
-	end
 end
 
 
